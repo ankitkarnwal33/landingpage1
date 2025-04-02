@@ -81,7 +81,7 @@
                   </h4>
                 </div>
 
-                <form class="myForm" id="myfrom">
+                <form class="myForm" id="form1">
                   <input
                     type="hidden"
                     name="formIdentifier"
@@ -804,7 +804,6 @@
             $(this).serialize() +
             "&source=Google%20Ad%20words&sub_source=Health&agency=Trigital&ad_type=Nutritionlife%20RT";
           console.log(formData);
-
           $.ajax({
             url: "https://script.google.com/macros/s/AKfycbwYmcqgKRll2VOyKHYRnvp-mUoauyQGgApsvaEqKL7IExzDfsFUoUUIf-DEMGQcA0fT/exec", // Replace with your Google Apps Script Web App URL
             type: "POST",
@@ -822,7 +821,8 @@
                     .find('button[type="submit"]')
                     .attr("disabled", false)
                     .text("Get Started");
-                  location.href = "thankyou.php";
+
+                  location.href = "thankyou.html";
                 },
                 error: function (result) {
                   console.log(result);
