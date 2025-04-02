@@ -1,0 +1,475 @@
+:root {
+  --orange: #ff5722;
+  --background-color: #f8f9fa;
+  --text-color: #000000;
+  --white: #ffffff;
+  --bg-grey: #e1e1e1;
+  --gradient1: linear-gradient(145deg, #ff7944, #fd5757);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-family: "Archivo", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.dview {
+  display: block;
+}
+
+.mview {
+  display: none;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semiBold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extraBold {
+  font-weight: 800;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.text-darkOrange {
+  color: #ff5722;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-gradient1 {
+  background: linear-gradient(to right, #ff7944, #fd5757);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient1 {
+  background-image: linear-gradient(145deg, #ff7944, #fd5757);
+}
+
+.bg-grey {
+  background-color: #e1e1e1;
+}
+
+/* Flexbox Example */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Grid Example */
+.grid-container {
+  display: grid;
+  gap: 20px;
+}
+
+.wrapper {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: #000000;
+  font-size: 26px;
+  border-radius: 10px;
+}
+
+.accordion-body {
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.accordion-collapse hr {
+  opacity: 1;
+  background-color: #ff5722;
+  color: #ff5722;
+  margin: 5px 20px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.curvebox {
+  padding: 50px 20px 20px 30px;
+  background: linear-gradient(170deg, #ff7745, #fd5857);
+  height: 100%;
+  border-radius: 129px 19px 129px 19px;
+}
+
+.curvebox > div:nth-child(1) {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.curvebox h6 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.curvebox p {
+  color: #ffffff;
+}
+
+.curvebox > div div:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  flex-shrink: 0;
+  /* Prevents shrinking */
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curvebox > div div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.wrapper hr {
+  width: 40%;
+  opacity: 1;
+  border-width: 2px;
+}
+
+section.even,
+section.odd {
+  padding: 10px 0 0 0;
+}
+
+section.even .row,
+section.odd .row {
+  align-items: center;
+}
+
+.sports {
+  background: url(./images/sportbg.png) center center no-repeat;
+  background-size: cover;
+}
+
+.weightloss {
+  background: url(./images/weightlossbg.png) 20% center no-repeat,
+    var(--gradient1);
+  background-size: contain;
+}
+
+.beauty {
+  background: url(./images/beautybg.png) center center no-repeat;
+  background-size: cover;
+  padding: 0 !important;
+}
+
+.genetic {
+  background: url(./images/geneticbg.png) 20% center no-repeat, var(--gradient1);
+  background-size: contain;
+}
+
+.kids {
+  background: url(./images/kidsbg.png) center center no-repeat;
+  background-size: cover;
+}
+
+.menwomen {
+  background: url(./images/menwomenbg.png) 20% center no-repeat,
+    var(--gradient1);
+  background-size: contain;
+}
+
+.weightgain {
+  background: url(./images/weightgainbg.png) center center no-repeat;
+  background-size: cover;
+}
+
+.wedding {
+  background: url(./images/weddingbg.png) 20% center no-repeat, var(--gradient1);
+  background-size: contain;
+}
+
+.pregnancy {
+  background: url(./images/pregnancybg.png) center center no-repeat;
+  background-size: cover;
+}
+
+.medical {
+  background: url(./images/medicalbg.png) 20% center no-repeat, var(--gradient1);
+  background-size: contain;
+}
+
+.odd .contentbox {
+  text-align: end;
+}
+
+.odd .contentbox hr {
+  margin-left: auto !important;
+  text-align: end;
+}
+
+.even .imagebox {
+  text-align: center;
+}
+
+/**
+==============================================================
+POPUP CSS STARTS  
+=================================================================
+**/
+/* Popup container */
+.popup {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Overlay background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 700px;
+  position: relative;
+}
+
+.popup-content h2 {
+  margin: 0 0 15px;
+}
+
+.popup-content p {
+  margin: 0 0 20px;
+}
+
+.popup-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffb031;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 45px 0;
+  }
+
+  section.even,
+  section.odd {
+    padding: 45px 0 45px 0;
+  }
+  /* .beauty {
+    padding: 45px 0 45px 0!important;
+} */
+
+  .dview {
+    display: none !important;
+  }
+
+  .mview {
+    display: block !important;
+  }
+
+  .sec1 {
+    text-align: center;
+  }
+
+  .contentbox {
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+
+  .imagebox {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .wrapper hr {
+    width: 40%;
+    opacity: 1;
+    border-width: 2px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .odd .row {
+    flex-direction: column-reverse;
+  }
+
+  .sec11 {
+    text-align: center;
+  }
+  .sec11[class^="col"] {
+    margin-bottom: 20px;
+  }
+  .accordion-button {
+    font-size: 22px;
+  }
+
+  .accordion-body {
+    font-size: 18px;
+  }
+}
