@@ -78,6 +78,14 @@ section {
   display: block;
 }
 
+.button {
+  transition: all 0.3s ease-in;
+}
+
+.button:hover {
+  transform: scale(1.02);
+}
+
 .mview {
   display: none;
 }
@@ -190,6 +198,11 @@ section {
   background: linear-gradient(170deg, #ff7745, #fd5857);
   height: 100%;
   border-radius: 129px 19px 129px 19px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(255, 119, 69, 0.768);
+}
+.curvebox:hover {
+  transform: scale(1.04);
 }
 
 .curvebox > div:nth-child(1) {
@@ -235,6 +248,8 @@ section {
 section.even,
 section.odd {
   padding: 10px 0 0 0;
+  opacity: 1;
+  transition: all 0.8s ease;
 }
 
 section.even .row,
@@ -472,4 +487,9 @@ POPUP CSS STARTS
   .accordion-body {
     font-size: 18px;
   }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(5rem);
 }

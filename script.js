@@ -96,7 +96,7 @@
 // }
 
 // // Close the popup when the close button is clicked
-// closeBtn.onclick = function () {
+// closeBtn.onclick = functio () {
 //   popup.style.display = "none";
 // };
 // popupImg.onclick = function () {
@@ -109,3 +109,20 @@
 //     popup.style.display = "none";
 //   }
 // };
+
+const sectionAll = document.querySelectorAll(".hidden");
+
+const handleRevealSections = function (entries, observer) {
+  const [entry] = entries;
+  entries.forEach((ent) => {
+    if (!ent.isIntersecting) return;
+    ent.target.classList.remove("hidden");
+  });
+};
+
+const sectionRevealObserver = new IntersectionObserver(handleRevealSections, {
+  root: null,
+  threshold: 0,
+});
+
+sectionAll.forEach((section) => sectionRevealObserver.observe(section));
